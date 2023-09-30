@@ -62,7 +62,7 @@ body {
 }
 
 .mapa {
-    background: url(../img/map.png), no-repeat;
+    background: url(../img/map.png);
     width:57%;
     height:27rem;
 }
