@@ -28,7 +28,7 @@ function changeLanguage(language) {
 }
 
 // Inicializar el idioma en español
-let currentLanguage = "es";
+let currentLanguage = "en";
 
 // Llamar a la función para cargar las traducciones iniciales
 loadTranslations(currentLanguage);
