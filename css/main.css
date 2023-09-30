@@ -7,8 +7,24 @@ body {
     overflow-x: hidden;
 }
 
+/* Estilos para el menú de navegación */
+.navbar {
+    background-color: transparent; /* Fondo transparente */
+    width: 100%; /* Ancho completo */
+    padding: 20px; /* Espaciado interno para los elementos del menú */
+}
 
-/*===================MENU==========================*/
+
+
+.nav-link {
+    color: white; /* Color del texto del menú */
+    font-weight: bold;
+}
+
+/* Puedes ajustar otros estilos según tus necesidades */
+
+
+/*===================s==========================*/
 
  #menu a, button{
      font-size: 18px !important;
@@ -127,6 +143,7 @@ footer p{
     font-size: 26px;
     padding: 0 8px;
     color:#f3f3f3;
+    justify-content: center;
 }
 
 /*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
@@ -186,6 +203,7 @@ footer p{
 @media (max-width: 576px) {
     #servicios-fila-2 {
         width:100% !important;
+        
     }
     #servicios-fila-1 {
         width:100% !important;
