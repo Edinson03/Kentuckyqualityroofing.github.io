@@ -78,3 +78,4 @@ window.addEventListener("scroll", checkVideoPlay);
 
 // Verificar el estado del video cuando la página se carga
 window.addEventListener("load", checkVideoPlay);
+
