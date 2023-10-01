@@ -8,8 +8,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./img/l.png" type="image/png">
     <!-- Tu hoja de estilos personalizada -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para el botón de WhatsApp */
+        .whatsapp-button {
+            display: flex;
+            align-items: center;
+            background-color: #25d366;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-button img {
+            margin-right: 10px;
+            width: 25px;
+            height: 25px;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128c7e;
+        }
+    </style>
 </head>
 <body>
     <!-- Encabezado -->
@@ -36,11 +61,12 @@
                     </ul>
                 </div>
                 <div class="navbar-item text-dark">
-                    <a href="https://api.whatsapp.com/send?phone=13057251000" target="_blank" class="text-dark">
-                        <img src="./img/logw.svg" alt="WhatsApp" width="25" height="25">
-                        <span class="ms-2 text-dark">+1 (270) 935-7601</span>
-                    </a>
-                </div>
+                    <div class="navbar-item">
+                        <a href="https://wa.me/13057251000?text=¡Hola! Estoy interesado en sus servicios de techado." target="_blank" class="whatsapp-button">
+                            <img src="./img/logw.svg" alt="WhatsApp">
+                            <span>+1 (270) 935-7601</span>
+                        </a>
+                    </div>
             </div>
         </nav>
     </header>
