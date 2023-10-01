@@ -154,14 +154,16 @@
                     <div class="navbar-item text-dark">
                         <div class="navbar-item">
                             <a href="https://wa.me/13057251000?text=¡Hola! Estoy interesado en sus servicios de techado." target="_blank" class="whatsapp-button">
-                                <img src="./img/logw.svg" alt="WhatsApp">
-                                <span>+1 (270) 935-7601</span>
+                                <img src="./img/logw.svg" alt="WhatsApp" class="img-fluid"> <!-- Agrega la clase "img-fluid" para que la imagen sea responsive -->
+                                <span class="d-lg-none">WhatsApp</span> <!-- Mostrar el texto solo en pantallas pequeñas -->
+                                <span class="d-none d-lg-inline">+1 (270) 935-7601</span> <!-- Mostrar el número solo en pantallas medianas y grandes -->
                             </a>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
+        
         <div class="container mt-4">
             <h1 class="page-title">Kentucky Quality Roofing</h1>
         </div>
@@ -260,16 +262,22 @@
     </div>
 </div>
 
-            
-    <div id="local" class="border-top border-2">
-        <div class="mapa"> </div>
-        <div>
-            <div class="wrapper-local">
-                <h2 data-translate="location_title">Located in Bowling green, Kentucky</h2>
-                <h2 class="text-primary mb-4" id="typewriter"></h2>
-            </div>
+
+
+<div id="local" class="border-top border-2">
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3122.682938548738!2d-86.44808178428741!3d36.99004497991036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8869424f1c1df07f%3A0x7a99560ff7ca51b5!2sBowling%20Green%2C%20KY%2C%20USA!5e0!3m2!1sen!2s!4v1642155941234!5m2!1sen!2s" frameborder="0" style="border:0; width: 100%; height: 100%; min-height: 400px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div>
+        <div class="wrapper-local">
+            <h2 data-translate="location_title">Located in Bowling green, Kentucky</h2>
+            <h2 class="text-primary mb-4" id="typewriter"></h2>
         </div>
     </div>
+</div>
+
+
+
 
     <!-- Sección Contactos -->
     <section id="seccion-contacto" class="border-bottom border-secondary border-2 mt-4 pt-4">
