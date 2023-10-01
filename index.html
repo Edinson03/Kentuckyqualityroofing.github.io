@@ -11,88 +11,192 @@
     <link rel="icon" href="./img/l.png" type="image/png">
     <!-- Tu hoja de estilos personalizada -->
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Estilo para el botón de WhatsApp */
-        .whatsapp-button {
-            display: flex;
-            align-items: center;
-            background-color: #25d366;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
 
-        .whatsapp-button img {
-            margin-right: 10px;
-            width: 25px;
-            height: 25px;
-        }
-
-        .whatsapp-button:hover {
-            background-color: #128c7e;
-        }
-    </style>
-</head>
-<body>
-    <!-- Encabezado -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light p-0" id="menu">
-            <div class="container-fluid">
-                <div class="navbar-brand">
-                    <img src="./img/logo.png" alt="Logo" width="80" height="80">
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-translate="nav_inicio">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#equipo" data-translate="nav_equipo">Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#seccion-contacto" data-translate="nav_contactos">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-item text-dark">
-                    <div class="navbar-item">
-                        <a href="https://wa.me/13057251000?text=¡Hola! Estoy interesado en sus servicios de techado." target="_blank" class="whatsapp-button">
-                            <img src="./img/logw.svg" alt="WhatsApp">
-                            <span>+1 (270) 935-7601</span>
-                        </a>
+        <!-- Tus otros elementos head aquí -->
+    
+        <style>
+            /* Estilo para el encabezado */
+            header {
+                background-color: #56a4f8;
+                padding: 10px 0;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            }
+    
+            .navbar-brand img {
+                width: 60px; /* Modifica el ancho de la imagen a tu preferencia */
+                height: auto; /* Ajusta la altura automáticamente */
+            }
+    
+            .navbar-toggler-icon {
+                background-color: #fff;
+            }
+    
+            .navbar-nav .nav-link {
+                color: #fff;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+    
+            .navbar-nav .nav-link:hover {
+                color: #ff9900;
+            }
+    
+            /* Estilo para el botón de WhatsApp */
+            .whatsapp-button {
+                background-color: #25d366;
+                color: #fff;
+                padding: 10px 20px;
+                border-radius: 5px;
+                text-decoration: none;
+                font-weight: bold;
+                transition: background-color 0.3s;
+            }
+    
+            .whatsapp-button img {
+                margin-right: 10px;
+                width: 25px;
+                height: 25px;
+            }
+    
+            .whatsapp-button:hover {
+                background-color: #128c7e;
+            }
+    
+            /* Estilo para la barra de navegación */
+            .navbar {
+                background-color: transparent;
+                border: none;
+            }
+    
+            .navbar-collapse {
+                text-align: center;
+            }
+    
+            .navbar-nav {
+                margin: 0;
+            }
+    
+            .navbar-nav .nav-item {
+                padding: 0;
+                margin: 0 10px;
+            }
+    
+            .navbar-toggler {
+                border: none;
+            }
+    
+            /* Estilo para los enlaces de navegación */
+            .nav-link {
+                text-transform: uppercase;
+                font-size: 18px;
+                letter-spacing: 2px;
+            }
+        </style>
+        <style>
+            /* Estilo para ocultar los botones en el centro del carrusel */
+            .carousel-control-prev,
+            .carousel-control-next {
+                opacity: 0; /* Oculta los botones por defecto */
+                pointer-events: none; /* Evita la interacción con los botones ocultos */
+                width: 0; /* Ancho cero */
+                height: 0; /* Altura cero */
+                transition: opacity 0.3s; /* Efecto de transición de opacidad */
+            }
+    
+            /* Estilo para mostrar los botones en los lados izquierdo y derecho */
+            #carousel:hover .carousel-control-prev,
+            #carousel:hover .carousel-control-next {
+                opacity: 1; /* Muestra los botones cuando el carrusel está en foco */
+                width: auto; /* Ancho automático para mostrar los botones */
+                height: auto; /* Altura automática para mostrar los botones */
+                pointer-events: auto; /* Habilita la interacción con los botones */
+            }
+        </style>
+        <style>
+            /* Estilo para el título */
+            .page-title {
+                font-family: "Arial", sans-serif;
+                font-size: 48px;
+                font-weight: bold;
+                color: #333; /* Cambia el color a tu preferencia */
+                text-shadow: 2px 2px 4px rgba(185, 19, 19, 0.5); /* Agrega sombra de texto */
+                text-align: center;
+                padding: 20px; /* Espaciado alrededor del título */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Otros elementos de tu página -->
+    
+        <!-- Encabezado mejorado -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+                <div class="container-fluid">
+                    <div class="navbar-brand">
+                        <img src="./img/logo.png" alt="Logo">
                     </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Slider de Imágenes -->
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="./img/istockphoto-1172013285-612x612.webp" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="./img/roofing2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="./img/roofing4.jpg" class="d-block w-100" alt="...">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-translate="nav_inicio">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#equipo" data-translate="nav_equipo">Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#seccion-contacto" data-translate="nav_contactos">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-item text-dark">
+                        <div class="navbar-item">
+                            <a href="https://wa.me/13057251000?text=¡Hola! Estoy interesado en sus servicios de techado." target="_blank" class="whatsapp-button">
+                                <img src="./img/logw.svg" alt="WhatsApp">
+                                <span>+1 (270) 935-7601</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Título estilizado -->
+            
+        </header>
+        <div class="container mt-4">
+            <h1 class="page-title">Kentucky Quality Roofing</h1>
+        </div>
+    
+        <!-- Slider de Imágenes -->
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="./img/tes.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./img/tes.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./img/roofing4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+
 
     <!-- Introducción de Servicios -->
     <section class="d-flex flex-column justify-content-center align-items-center pt-5 text-center">
