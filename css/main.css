@@ -1,5 +1,13 @@
 /*===============Propiedades Globales================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+}
+html {
+    font-size: 62.5%;
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
@@ -13,9 +21,26 @@ body {
     width: 100%; /* Ancho completo */
     padding: 20px; /* Espaciado interno para los elementos del menú */
 }
+.container {
+    justify-content: center;    
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+.col-md-6 {
+    padding: 0%;
+    margin: 0%;
+    justify-content: center;
+    width: 100%;
+    align-items: block;
+}
 
-
-
+#seccion-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .nav-link {
     color: white; /* Color del texto del menú */
     font-weight: bold;
@@ -38,10 +63,14 @@ body {
  }
 /*===================SLIDER DE IMAGENES==========================*/
 
-.carousel-inner {
-    max-height:39rem !important;
+.carousel1 img {
+    width: 10rem;
+    align-items: center;
 }
-
+.carousel2 img {
+    width: 10rem;
+    align-items: center;
+}
 /*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
 
 
@@ -117,7 +146,7 @@ body {
     top:30%;
     left:50%;
     transform: translate(-50%, -50%);
-    background: #fbfafa;
+    background: #fbfa;
     border-radius:5px;
     
 }
@@ -126,7 +155,10 @@ body {
     color: #3f3f3f;
 }
 
-
+#facilities-text {
+    color: #3f3f3f;
+    font-size: 1.6rem;
+}
 
 
 /*=========================FOOTER================================*/
@@ -223,7 +255,36 @@ header {
     background-color: #56a4f8;
     padding: 10px 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    
+
 }
+.nav li:hover {
+    background-color: #25282c;
+    color: #fff;
+    transition: 0.5s;
+}
+.nav {
+    display: flex;
+    list-style: none;
+    position: relative;
+    right: 0;
+    color: black;
+    margin-left: auto;
+    }
+
+  
+  .nav li {
+    display: inline-block;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+        align-items: flex-end;
+    flex: 1;
+  }
 
 .navbar-brand img {
     width: 60px; /* Modifica el ancho de la imagen a tu preferencia */
@@ -326,10 +387,9 @@ header {
 
 /* Estilo para el texto */
     p {
-        font-size: 18px;
+        font-size: 1.6rem;
         line-height: 1.5;
-        color: #000000;
-        margin-bottom: 20px;
+
     }
     
     h2 {
@@ -352,12 +412,19 @@ header {
         font-size: 34px;
         font-weight: bold;
         font-style: italic;
-        font-variant: small-caps;
-        font-family: monospace;
-        text-transform: capitalize;
-        letter-spacing: 4px;
+        font-family: arial;
+        text-transform: uppercase;
         color: #b80935;
         text-align: center;
         word-spacing: 8px;
         margin: 0;
     }
+#seccion-contacto {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: red;
+}
